@@ -1,0 +1,126 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+body {
+    background-color: #F2F2F3;
+    font-family: 'Avenir','Helvetica Neue',Arial,sans-serif;
+}
+
+ul.messages {
+    list-style-type: none;
+    text-align: center;
+    z-index: 1000;
+    position: fixed;
+    top: 100px;
+}
+
+.error-msg {
+    color: red;
+}
+
+.btn-custom {
+    background-color: #23B099;
+    color: white;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.background-image {
+    background: url("/img/index_bg.jpg") center center / auto 100%;
+    width: 100%;
+    min-height: 1000px;
+    background-size: cover;
+}
+
+.registration-form {
+    margin-top: 10%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding-bottom: 3%;
+    border-radius: 20px;
+}
+
+.contact-form {
+    margin-top: 16%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding-bottom: 3%;
+    border-radius: 20px;
+}
+
+.foot-item, .foot-item:link, .foot-item:hover, .foot-item:focus, .foot-item:active {
+    color: white;
+    text-decoration: none;
+}
+
+
+/****************eighth-section*****************/
+div.eighth-section {
+    padding-top: 4%;
+    padding-bottom: 30px;
+    background-color: #36454F;
+}
+
+div.credits {
+    padding-top: 60px;
+    color: #A1AAB6;
+}
+
+.eighth-section > div > div > ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.eighth-section > div > div > ul > li > a {
+    color: white;
+}
+
+div.menu {
+    line-height: 2.42857143;
+}
+.menu > h3 {
+    margin-top: 0;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.menu > ul > li > a {
+    color: #89A1C0;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+div.clearfix > form {
+    float: left;
+    width: 90%;
+    position: relative;
+}
+
+input.email {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 1px inset;
+    font-size: 13px;
+}
+
+div.newsletter {
+    position: relative;
+}
+
+div.newsletter > div > p {
+    color: white;
+}
+
+div.social {
+    float: right;
+    position: relative;
+    top: 30px;
+    right: 50px;
+}

@@ -1,0 +1,194 @@
+{{> navlogedIn}}
+
+
+<div class="container background-image">
+<div class="row">
+<div class="col-md-offset-4 col-md-4 col-sm-offset-4 col-sm-4 col-xs-offset-1 col-xs-10 registration-form">
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="http://cdn-na.infragistics.com/igniteui/2016.2/latest/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+    <link href="http://cdn-na.infragistics.com/igniteui/2016.2/latest/css/structure/infragistics.css" rel="stylesheet" />
+
+    <script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.8.3.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="http://cdn-na.infragistics.com/igniteui/2016.2/latest/js/infragistics.core.js"></script>
+    <script src="http://cdn-na.infragistics.com/igniteui/2016.2/latest/js/infragistics.lob.js"></script>
+
+<div class="container" style="padding-top: 60px;">
+  
+ 
+
+    <!-- left column -->
+    <!--
+    <div class="col-md-3 col-sm-3 col-xs-3">
+      <div class="text-center">
+        <input type="file" class="text-center center-block well well-sm">
+      </div>
+     -->
+
+<img src="http://www.clker.com/cliparts/5/7/4/8/13099629981030824019profile.svg.med.png"  style="width:104px;height:142px;float:left" hspace="20" padding: 20px;>
+<br><br><br><br><br><br><br><br>
+
+
+ <div> <input type="file" ></div>
+
+    </div>
+  <h3>Personal info</h3>
+
+
+           
+
+
+
+       <form method="POST" action="/userprofile/{{user.username}}" class="form-horizontal" role="form">
+       <input type="hidden" name="_method" value="PUT"/>
+        <div class="form-group">
+          <label class="col-lg-3 control-label">First name: </label>
+          <div class="col-lg-8">
+            <input name="firstname" class="form-control" value={{user.first_name}} type="text">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Last name:</label>
+          <div class="col-lg-8">
+            <input name= "lastname" class="form-control" value={{user.last_name}} type="text">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Gender:</label>
+          <div class="col-lg-8">
+            <select id="selectbasic" name="gender" class="input-xlarge">
+              <option value={{user.gender}}>select</option>
+              <option value="male" >Male</option>
+              <option value="female"> Female</option>
+              <option value="value"> Other</option>
+            </select>
+          </div>
+        </div>
+
+
+            <div class="form-group">
+          <label class="col-lg-3 control-label">Username:</label>
+          <div class="col-lg-8">
+            <input name="username" class="form-control" value={{user.username}} type="text">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Email:</label>
+          <div class="col-lg-8">
+            <input name="email"  class="form-control" value={{user.email}} type="text">
+          </div>
+        </div>
+
+   <div class="form-group">
+          <label class="col-lg-3 control-label">Phone:</label>
+          <div class="col-lg-8">
+            <input name="phone"  class="form-control" value={{user.phone}} type="text">
+          </div>
+        </div>
+
+
+
+
+
+
+       
+           
+<!-- 
+
+
+<div class="form-group">
+          <label class="col-lg-3 control-label">Personal:</label>
+          <div class="col-lg-8">
+    <div id="multiSelectCombo"></div>
+
+    </div>
+</div>
+
+    <div class="form-group">
+          <label class="col-lg-3 control-label">Group:</label>
+          <div class="col-lg-8">
+    <div id="multiSelectCombo1"></div>
+
+
+
+
+</div>
+
+
+</div>
+
+    <script>
+
+        var in33 = [
+            { Name: "Cycling" },
+            { Name: "Running" },
+            { Name: "Swimming" },
+            { Name: "Hiking" },
+            { Name: "Reading" },
+            { Name: "Video Games" }
+        ];
+
+        var in31 = [
+            { Name: "Movies" },
+            { Name: "Concerts" },
+            { Name: "Coffee Shops" },
+            { Name: "Beach" },
+            { Name: "Museum" },
+            { Name: "Shopping" },
+            { Name: "Club/Bar" }
+        ];
+
+        $(function () {
+
+            $("#multiSelectCombo").igCombo({
+                width: "280px",
+                dataSource: in33,
+                textKey: "Name",
+                valueKey: "Name",
+                multiSelection: {
+                    enabled: true
+                }
+            });
+
+            $("#multiSelectCombo1").igCombo({
+                width: "280px",
+                dataSource: in31,
+                textKey: "Name",
+                valueKey: "Name",
+                multiSelection: {
+                    enabled: true
+                }
+            });
+        });
+
+    </script>
+-->
+
+<div class="form-group">
+          <label class="col-lg-3 control-label">About me:</label>
+          <div class="col-lg-8">
+        <textarea rows="3" cols="40" maxlength="90" name="about_me"></textarea>
+ 
+
+</div>
+</div>
+
+        <div class="form-group">
+          <label class="col-md-3 control-label"></label>
+          <div class="col-md-8">
+            <input class="btn btn-primary" value="Save Changes" type="submit">
+            <span></span>
+            
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

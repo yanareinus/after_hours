@@ -1,0 +1,25 @@
+{{> index/nav}}
+
+<div class="container background-image">
+    <div class="row">
+        <div class="col-md-offset-4 col-md-4 col-sm-offset-4 col-sm-4 col-xs-offset-1 col-xs-10 registration-form">
+            <h1 class="text-center">Sign in to AfterHours</h1>
+            <form method="post" action="/login">
+                <div class="form-group">
+                    <label for="id_username">Username</label>
+                    <input type="text" class="form-control" id="id_username" placeholder="Username" name="username" maxlength=30 required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="id_password" placeholder="Password" name="password" required>
+                </div>
+
+                <input type="submit" class="btn btn-success btn-block" value="Sign in" />
+            </form>
+
+            <p>"Forgot your password?"<a href="#">Reset it</a>.</p>
+            <p>"Not a member?"<a href="#">Register</a>.</p>
+        </div>
+    </div>
+</div>

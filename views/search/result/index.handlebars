@@ -1,0 +1,36 @@
+{{> navlogedIn}}
+<div class="container background-image">
+    <div class="row">
+        <div class="col-md-offset-4 col-md-4 col-sm-offset-4 col-sm-4 col-xs-offset-1 col-xs-10 registration-form">
+         <h1 class="text-center">Night Shifters </h1>                
+<table class="table">
+  <thead>
+    <tr>
+      
+     <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+      {{#each post}}
+           <tr>
+                <td>{{this.first_name}}
+                <td>{{this.last_name}}
+                <td>{{this.username}}
+                <td>
+                <form method="post" action="mailto:{{this.email}}" >
+                <input type="submit" value="Send Email" /> 
+</form>
+            </tr>
+
+        {{/each}}
+
+    </tbody>
+
+  </tbody>
+</table>
+          </div>
+        </div>
+    </div
+</div>

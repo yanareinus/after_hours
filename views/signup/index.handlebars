@@ -1,0 +1,68 @@
+{{> index/nav}}
+
+<div class="container background-image">
+    <div class="row">
+        <div class="col-md-offset-4 col-md-4 col-sm-offset-4 col-sm-4 col-xs-offset-1 col-xs-10 registration-form">
+            <h1 class="text-center">Sign up for AfterHours</h1>
+            <form method="post" action="/signup">
+                <div class="form-group">
+                    <label for="id_firstname">First Name</label>
+                    <p class="error-msg">{{ firstname_error }}</p>
+                    <input type="text" class="form-control" id="id_firstname" placeholder="First Name" name="firstname" maxlength=30>
+                </div>
+                <div class="form-group">
+                    <label for="id_lastname">Last Name</label>
+                    <p class="error-msg">{{ lastname_error }}</p>
+                    <input type="text" class="form-control" id="id_lastname" placeholder="Last Name" name="lastname" maxlength=30>
+                </div>
+                <div class="form-group">
+                    <label for="id_gender">Gender</label>
+                    <select id="id_gender" class="form-control" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="value">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="id_username">Username</label>
+                    <p class="error-msg">{{ username_error }}</p>
+                    <input type="text" class="form-control" id="id_username" placeholder="Username" name="username" maxlength=30 required>
+                </div>
+                <div class="form-group">
+                    <label for="id_email">Email address</label>
+                    <p class="error-msg">{{ email_error }}</p>
+                    <input type="email" class="form-control" id="id_email" placeholder="Email" name="email" required>
+                </div>
+
+ <div class="form-group">
+                    <label for="id_phone">phone</label>
+                    <p class="error-msg">{{ phone_error }}</p>
+                    <input type="phone" class="form-control" id="id_phone" placeholder="phone" name="phone" required>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <div class="form-group">
+                    <label for="id_password">Password</label>
+                    <p class="error-msg">{{ pass_not_match_error }}</p>
+                    <p class="error-msg">{{ password_error }}</p>
+                    <input type="password" class="form-control" id="id_password" placeholder="Password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="id_password2">Password confirmation</label>
+                    <p class="error-msg">{{ pass_not_match_error }}</p>
+                    <p class="error-msg">{{ password2_error }}</p>
+                    <input type="password" class="form-control" id="id_password2" placeholder="Password" name="password2" required>
+                </div>
+                <input type="submit" class="btn btn-success btn-block" value="Sign up for KlokIn" />
+            </form>
+        </div>
+    </div>
+</div>

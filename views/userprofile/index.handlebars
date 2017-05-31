@@ -1,0 +1,42 @@
+
+{{> navlogedIn}}
+
+
+
+
+
+<div class="container background-image">
+    <div class="row">
+        <div class="col-md-offset-4 col-md-4 col-sm-offset-4 col-sm-4 col-xs-offset-1 col-xs-10 registration-form">
+      <br>
+      <br>
+
+<img src="http://www.clker.com/cliparts/5/7/4/8/13099629981030824019profile.svg.med.png"  style="width:104px;height:142px;float:left" hspace="20" padding: 20px;>
+ 
+
+        <label style="font-size:20px;">First name: {{user.first_name}}</label>
+        <br>
+        <label style="font-size:20px;">Last name: {{user.last_name}}</label>
+        <br>
+        <label style="font-size:20px;" >User Name: {{user.username}}</label>
+        <br>
+        <label style="font-size:20px;">Gender: {{user.gender}}</label>
+        <br>
+        <label style="font-size:20px;">Email: {{user.email}}</label>
+        <br>
+        <label style="font-size:20px;">About Me:</label> 
+        <br>
+        <lable style="font-size:18px;" >{{user.about_me}}</label>
+        <br>
+        <br>
+        <br>
+
+<a href="/editprofile"style="color:black" ><lable display:block;> <u>Edit Profile</u></label></a>
+
+        </div>
+    </div>
+</div>
+
+
+
+          
